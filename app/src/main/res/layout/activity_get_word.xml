@@ -14,7 +14,7 @@
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
         android:layout_marginTop="43dp"
-        android:text="Check"
+        android:text="@string/check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/theWord"
@@ -31,7 +31,7 @@
         android:layout_marginRight="28dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
-        android:text="Is It A Word?"
+        android:text="@string/is_it_a_word"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="36sp"
         android:textStyle="bold|italic"
@@ -51,7 +51,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="Word..."
+        android:hint="@string/word"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/startAPICall"
@@ -74,22 +74,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/theWord"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/dictionary" />
+        app:srcCompat="@drawable/dictionary"
+        android:contentDescription="@string/todo" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="351dp"
-        android:layout_height="146dp"
-        android:layout_marginBottom="39dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="17dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="37dp"
+    <EditText
+        android:id="@+id/theDef"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/startAPICall" />
+
 </android.support.constraint.ConstraintLayout>

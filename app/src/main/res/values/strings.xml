@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="edit_message">Enter A Message</string>
+    <string name="check">Check</string>
+    <string name="is_it_a_word">Is It A Word?</string>
+    <string name="word">Word...</string>
+    <string name="todo">TODO</string>
 </resources>
